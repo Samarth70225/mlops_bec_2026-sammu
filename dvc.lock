@@ -12,8 +12,8 @@ stages:
       size: 977501
     - path: src/train.py
       hash: md5
-      md5: d26122969c910af32a841027fb2c2861
-      size: 10620
+      md5: 1aa2d14c42db911edca3d88cd98bc074
+      size: 10858
     params:
       params.yaml:
         train.colsample_bytree: 0.8
@@ -50,8 +50,8 @@ stages:
       size: 1780454
     - path: src/evaluate.py
       hash: md5
-      md5: 30fc433d13bf3b0547c0b8a0ab1b54d3
-      size: 7653
+      md5: 3ff1bb80758dd8227b5c9f3aca8cb76e
+      size: 7827
     params:
       params.yaml:
         evaluate.min_accuracy: 0.78
