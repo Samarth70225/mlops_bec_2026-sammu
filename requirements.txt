@@ -46,4 +46,3 @@ joblib==1.4.2          # model serialisation fallback
 python-multipart==0.0.9
 requests==2.32.2
 PyYAML==6.0.1
-pathspec==0.12.1
