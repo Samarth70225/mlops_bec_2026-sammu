@@ -8,8 +8,8 @@ stages:
     deps:
     - path: data/raw/telco_churn.csv
       hash: md5
-      md5: 0f9de68e012bd3aed5fa7cdc9fc421af
-      size: 977501
+      md5: 56f1eeb8e8e4fc1a372fe6d5e467d829
+      size: 977502
     - path: src/train.py
       hash: md5
       md5: 1aa2d14c42db911edca3d88cd98bc074
@@ -29,12 +29,12 @@ stages:
     outs:
     - path: metrics/scores.json
       hash: md5
-      md5: bf7db217f58754fbb84daed5d2afe743
+      md5: 3fdc964ee57d77a394f6455dd6253f27
       size: 70
     - path: models/best_model.pkl
       hash: md5
-      md5: c83984e14b31d3a20abeb909f0fc801b
-      size: 1780454
+      md5: a4482319b3327da47b7073a7db81980d
+      size: 1776443
   evaluate:
     cmd: python src/evaluate.py --data_path data/raw/telco_churn.csv 
       --model_path models/best_model.pkl --min_accuracy 0.78 --min_auc_roc 0.8 
@@ -42,12 +42,12 @@ stages:
     deps:
     - path: data/raw/telco_churn.csv
       hash: md5
-      md5: 0f9de68e012bd3aed5fa7cdc9fc421af
-      size: 977501
+      md5: 56f1eeb8e8e4fc1a372fe6d5e467d829
+      size: 977502
     - path: models/best_model.pkl
       hash: md5
-      md5: c83984e14b31d3a20abeb909f0fc801b
-      size: 1780454
+      md5: a4482319b3327da47b7073a7db81980d
+      size: 1776443
     - path: src/evaluate.py
       hash: md5
       md5: 3ff1bb80758dd8227b5c9f3aca8cb76e
@@ -60,5 +60,5 @@ stages:
     outs:
     - path: metrics/eval_scores.json
       hash: md5
-      md5: bf7db217f58754fbb84daed5d2afe743
+      md5: 3fdc964ee57d77a394f6455dd6253f27
       size: 70
